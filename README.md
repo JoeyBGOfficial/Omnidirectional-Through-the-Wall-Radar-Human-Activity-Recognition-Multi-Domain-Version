@@ -2,7 +2,7 @@
 
 <img src="./Multi-View_Scenario.jpg" alt="Multi-View Scenario" width="60%" />
 
-<h1 style="color:#000000;">Omnidirectional TWR HAR</h1>
+<h1 style="color:#000000;">Omnidirectional TWR HAR (Multi-Domain Version)</h1>
 
 <p>
   <b>Expanded Multi-Window mDOF Hard Voting Ensemble for Omnidirectional Through-the-Wall Radar Human Activity Recognition</b>

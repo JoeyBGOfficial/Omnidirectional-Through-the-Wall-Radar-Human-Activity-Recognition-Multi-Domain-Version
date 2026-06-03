@@ -46,9 +46,8 @@ The current implementation trains one DTM branch and twelve multi-window mDOF br
 
 ### 📫 Paper Information
 
-* **Paper**
-  * **Title:** None.
-  * **Journal Reference:** None.
+* **Title:** None.
+* **Journal Reference:** None.
 
 ---
 

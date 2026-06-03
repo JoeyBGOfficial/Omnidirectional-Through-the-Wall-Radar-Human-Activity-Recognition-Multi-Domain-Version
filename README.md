@@ -56,25 +56,25 @@ The current implementation trains one DTM branch and twelve multi-window mDOF br
 <table>
   <tr align="center">
     <td width="50%">
-      <h3>🧥 1. JetLogDTM-Aware Input</h3>
-      <p>The original RGB jet DTM is decoded back to normalized log-amplitude intensity. No second logarithmic transform, no default histogram equalization, and no extra contrast enhancement are applied.</p>
+      <h3>🧩 1. Multi-Window Motion Representation</h3>
+      <p>Multiple horizontal mDOF branches are designed with different slow-time windows and frame shifts, capturing short-term, mid-term, and near-global motion patterns for cross-view HAR.</p>
       <br>
     </td>
     <td width="50%">
-      <h3>🌠 2. Expanded mDOF Windows</h3>
-      <p>Twelve horizontal mDOF maps are extracted with short, middle, long, and near-global slow-time windows to improve branch diversity for cross-view testing.</p>
+      <h3>🌀 2. Multi-Domain Branch Ensemble</h3>
+      <p>The original DTM stream and expanded mDOF streams are modeled as independent decision branches, allowing complementary appearance and motion cues to contribute to the final recognition.</p>
       <br>
     </td>
   </tr>
   <tr align="center">
     <td>
-      <h3>🌀 3. Independent Branch Learning</h3>
-      <p>The original DTM and each mDOF map are sent to independent lightweight branch networks, reducing single-feature dependence and encouraging complementary decisions.</p>
+      <h3>🧠 3. Lightweight Gated Multi-Kernel Network</h3>
+      <p>Each branch uses a compact ConvNeXt-style architecture with parallel 3×3, 5×5, and 7×7 convolutions, feature gating, residual learning, and global pooling for efficient single-modality classification.</p>
       <br>
     </td>
     <td>
-      <h3>🚀 4. Hard Voting Ensemble</h3>
-      <p>The final label is produced by hard voting across selected branches. Tied cases are resolved by branch confidence and a fixed DTM-to-mDOF priority order.</p>
+      <h3>🚀 4. View-Robust Hard Voting Strategy</h3>
+      <p>The ensemble searches for a robust branch subset and optimizes cross-view stability by prioritizing minimum angle accuracy. Final decisions are fused by hard voting with confidence-based tie breaking.</p>
       <br>
     </td>
   </tr>

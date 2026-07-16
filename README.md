@@ -44,10 +44,10 @@ Through-the-wall radar (TWR) human activity recognition (HAR) is strongly affect
 
 The current implementation trains one DTM branch and twelve multi-window mDOF branches independently. The final activity label is obtained by hard voting. Branch confidence is used only for tied voting cases. The training and validation data are collected at the 0-degree view, while the trained ensemble is directly evaluated on 30-330-degree measured testing views.
 
-### 📫 Paper Information
+### 📄 Paper Information
 
 * **Title:** Orientation-Invariant Micro-Doppler Signature Representation in Through-the-Wall Radar Human Activity Recognition.
-* **Journal Reference:** Submitted to IEEE Transactions on Microwave Theory and Techniques (IEEE TMTT), under review.
+* **Journal Reference:** Submitted to IEEE Transactions on Image Processing (IEEE TIP), under review.
 
 ---
 

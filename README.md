@@ -47,7 +47,7 @@ The current implementation trains one DTM branch and twelve multi-window mDOF br
 ### 📄 Paper Information
 
 * **Title:** Orientation-Invariant Micro-Doppler Signature Representation in Through-the-Wall Radar Human Activity Recognition.
-* **Journal Reference:** Submitted to IEEE Transactions on Image Processing (IEEE TIP), under review.
+* **Journal Reference:** Submitted to IEEE Transactions on Information Theory (IEEE TIT), under review.
 
 ---
 
